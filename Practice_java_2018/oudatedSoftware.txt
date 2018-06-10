@@ -1,0 +1,2 @@
+Server3, Database, MySQL, 5.0
+Server3, OS, Ubuntu, 10.04
