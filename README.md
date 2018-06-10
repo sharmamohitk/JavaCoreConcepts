@@ -5,13 +5,14 @@ create a new repository on the command line
 3. git add *  // here you are adding all the files for stagging i.e. these are the files which we will commit in local repository
 4. git rm --cached my-file.ts or git reset my-file.ts // it removes file from stagging area if you want to commit you need to add id again
 5. git commit -m "first commit"  // here we have commit the changes from stage to local repository and now we can add these changes to remote repository
-6. git reset --soft HEAD^ // if you want to revert your last commit and want to add more file with previous commit
+6. git commit -a -m README.md  // add and commit at once
+7. git reset --soft HEAD^ // if you want to revert your last commit and want to add more file with previous commit
 // what above command does it will it will cancel your previous your last commit and moved pointer before HEAD now you can add more file
 // it's alternate  of step 6
 git add file-i-forgot-to-add.html
-7. git commit --amend -m "Add the remaining file" // The "--amend" option allows the changes in last commit by adding a new file (or multiple files)
-7. git remote add origin https://github.com/sharmamohitk/JavaCoreConcepts.git  // here we are made a link / adding a remote repository with local repository
-8. git push -u origin master  // all the changes available in local repository will be added/commit to remote repository
+8. git commit --amend -m "Add the remaining file" // The "--amend" option allows the changes in last commit by adding a new file (or multiple files)
+9. git remote add origin https://github.com/sharmamohitk/JavaCoreConcepts.git  // here we are made a link / adding a remote repository with local repository
+10. git push -u origin master  // all the changes available in local repository will be added/commit to remote repository
 
 
 // working with branch
