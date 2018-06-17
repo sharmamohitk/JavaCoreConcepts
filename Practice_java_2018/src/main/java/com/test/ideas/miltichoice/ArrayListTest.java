@@ -2,7 +2,7 @@ package com.test.ideas.miltichoice;
 
 import java.util.*;
 
-public class TestArrayList {
+public class ArrayListTest {
     public static void main(String[] args) {
         ArrayList<ArrayList<Integer>> array =
             new ArrayList<ArrayList<Integer>>();
