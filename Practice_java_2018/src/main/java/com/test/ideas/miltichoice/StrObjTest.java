@@ -2,12 +2,13 @@ package com.test.ideas.miltichoice;
 
 public class StrObjTest {
 
-	static void m(Object o) {
-		System.out.println("m(o)");
-	}
-
+	
 	static void m(String s) {
 		System.out.println("m(s)");
+	}
+
+	static void m(Object o) {
+		System.out.println("m(o)");
 	}
 
 	static void m(Integer i) {
