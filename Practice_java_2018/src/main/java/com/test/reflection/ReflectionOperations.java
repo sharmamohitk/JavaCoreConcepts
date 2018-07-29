@@ -42,18 +42,12 @@ public class ReflectionOperations {
 			Method declaredPrivateMethod = clz.getDeclaredMethod("method3", new Class[] { String.class });
 			declaredPrivateMethod.setAccessible(true);
 			declaredPrivateMethod.invoke(clz.newInstance(), "test");
-			
+
 			// Reflection get instance from constructor
 			Constructor<?> constructor = Class.forName("com.test.reflection.ConcreteClass").getConstructor();
-			ConcreteClass newInstance =(ConcreteClass) constructor.newInstance();
+			ConcreteClass newInstance = (ConcreteClass) constructor.newInstance();
 			Method myObjMethod = newInstance.getClass().getMethod("method1", null);
 			myObjMethod.invoke(newInstance, null);
-			
-			
-			
-			
-			
-			
 
 		} catch (ClassNotFoundException | NoSuchFieldException | SecurityException | IllegalArgumentException
 				| IllegalAccessException | NoSuchMethodException | InvocationTargetException
