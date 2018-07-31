@@ -1,4 +1,0 @@
-1. Strategy design pattern define family of algorithm, encapsulate each one and makes them interchangeable.
-2. Inheritance hierarchy works well in top to downwards i.e. if we need the inherit parent behaviour/properties 
-3. if we need to share the functionality among classes then we need to use composition and it's a good design approach.
-4. it remove duplicate code and doesn't force us to write unnecessary code.

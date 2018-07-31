@@ -3,7 +3,7 @@ package com.test.clone;
 public class B extends A implements Cloneable{
 
 	public B() {
-		this.name = "test";
+		super("test");
 	}
 	
 	public static void main(String[] args) throws CloneNotSupportedException {
