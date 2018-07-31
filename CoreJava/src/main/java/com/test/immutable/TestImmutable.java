@@ -17,7 +17,8 @@ public class TestImmutable {
         System.out.println(im);
     }
  
-    private static void tryModification(String name, String country,Integer salary, Date mutableField , Map<String,Integer> map)
+    @SuppressWarnings("deprecation")
+	private static void tryModification(String name, String country,Integer salary, Date mutableField , Map<String,Integer> map)
     {
         mutableField.setDate(10);
         map.put("test3", 78);
