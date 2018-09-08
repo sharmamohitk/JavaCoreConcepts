@@ -1,4 +1,4 @@
-package com.test.thread;
+package com.test.thread.concurrency;
 
 import java.util.ArrayList;
 import java.util.List;

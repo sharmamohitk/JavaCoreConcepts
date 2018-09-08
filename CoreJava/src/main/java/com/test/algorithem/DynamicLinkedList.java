@@ -84,6 +84,22 @@ public class DynamicLinkedList {
 		}
 		System.out.println(node.data);
 	}
+	
+	void printMiddle()
+    {
+        Node slow_ptr = head;
+        Node fast_ptr = head;
+        if (head != null)
+        {
+            while (fast_ptr != null && fast_ptr.next != null)
+            {
+                fast_ptr = fast_ptr.next.next;
+                slow_ptr = slow_ptr.next;
+            }
+            System.out.println("The middle element is [" +
+                                slow_ptr.data + "] \n");
+        }
+    }
 
 	public static void main(String[] args) {
 
@@ -95,6 +111,7 @@ public class DynamicLinkedList {
 		list.insertAt(0, 55);
 		list.deleteAt(2);
 		list.show();
+		list.printMiddle();
 	}
 
 }

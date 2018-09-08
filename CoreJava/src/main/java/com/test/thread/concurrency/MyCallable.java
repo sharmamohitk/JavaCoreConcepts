@@ -1,4 +1,4 @@
-package com.test.thread;
+package com.test.thread.concurrency;
 
 import java.util.ArrayList;
 import java.util.HashMap;
@@ -40,11 +40,11 @@ public class MyCallable implements Callable<Long> {
 		test.concat("123");
 		System.out.println(test);
 
-		List list = new ArrayList<>();
+		List<Integer> list = new ArrayList<>();
 		list.add(0);
 		list.remove(0);
 
-		for (Iterator iterator = list.iterator(); iterator.hasNext();) {
+		for (Iterator<Integer> iterator = list.iterator(); iterator.hasNext();) {
 			Object object = (Object) iterator.next();
 			System.out.println(object);
 
