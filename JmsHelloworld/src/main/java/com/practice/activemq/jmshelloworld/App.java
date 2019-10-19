@@ -1,4 +1,4 @@
-package com.practice.jmshelloworld;
+package com.practice.activemq.jmshelloworld;
 
 /**
  * Hello world!

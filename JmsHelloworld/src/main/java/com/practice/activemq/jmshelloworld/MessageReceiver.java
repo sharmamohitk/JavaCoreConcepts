@@ -1,4 +1,4 @@
-package com.practice.jmshelloworld;
+package com.practice.activemq.jmshelloworld;
 
 import javax.jms.Connection;
 import javax.jms.ConnectionFactory;
